@@ -1,5 +1,5 @@
 <div class="container">
-    <form action="{{ $rota }}" method="POST" enctype="multipart/form-data">
+    <form action="{{$rota}}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="label_input">
             <label for="">{{ $input1 }}</label><br>
