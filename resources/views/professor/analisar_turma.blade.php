@@ -12,7 +12,18 @@
 
 <body>
     <nav class="navbar">
-        <x-navbar home="/professor" opcao1="Horário" caminhoOpcao1="horario" opcao2="Add Boletim" caminhoOpcao2="add_boletim" opcao3="Analisar Turma" caminhoOpcao3="analisar_turma" opcao4="Realizar Chamada" caminhoOpcao4="realizar_chamada" opcao5="Eventos" caminhoOpcao5="eventos" opcao6="" caminhoOpcao6="usuario"/>
+        <x-navbar
+            home="/professor"
+            opcao1="Horário" caminhoOpcao1="horario"
+            opcao2="Add Boletim" caminhoOpcao2="add_boletim"
+            opcao3="Analisar Turma" caminhoOpcao3="analisar_turma"
+            opcao4="Realizar Chamada" caminhoOpcao4="realizar_chamada"
+            opcao5="Eventos" caminhoOpcao5="eventos"
+            opcao6="" caminhoOpcao6="usuario"
+            opcao6="" caminhoOpcao6=""
+            opcao7="" caminhoOpcao7=""
+            opcao8="" caminhoOpcao8=""
+        />
     </nav>
     <x-titulo titulo="Analisar Turma" subtitulo="Professor: Pedro Gomes da Silva" />
     <x-tabela_analisar_turma />

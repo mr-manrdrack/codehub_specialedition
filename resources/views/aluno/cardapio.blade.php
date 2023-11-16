@@ -12,8 +12,8 @@
 
 <body>
 	<nav class="navbar">
-		<x-navbar home="/aluno" opcao1="Boletim" caminhoOpcao1="boletim" opcao2="Horário" caminhoOpcao2="horario" opcao3="Cardápio" caminhoOpcao3="cardapio" opcao4="Eventos" caminhoOpcao4="eventos" opcao5="Bloco de Notas" caminhoOpcao5="blocodenotas" opcao6="" caminhoOpcao6="usuario" />
-	</nav>
+        <x-navbar home="/aluno" opcao1="Boletim" caminhoOpcao1="boletim" opcao2="Horário" caminhoOpcao2="horario" opcao3="Cardápio" caminhoOpcao3="cardapio" opcao4="Eventos" caminhoOpcao4="eventos" opcao5="Bloco de Notas" caminhoOpcao5="blocodenotas" opcao6="" caminhoOpcao6="usuario" opcao6="" caminhoOpcao6="" opcao7="" caminhoOpcao7="" opcao8="" caminhoOpcao8=""/>
+    </nav>
 	<x-titulo titulo="Cardápio" subtitulo="Dia:01/01/2024" />
 	<!--<x-tabela_refeicao />-->
 	<div class="container">
