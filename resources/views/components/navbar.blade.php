@@ -20,9 +20,5 @@
         @if (!empty($caminhoOpcao8))
             <li><a href="{{ $caminhoOpcao8 }}">{{ $opcao8 }}</a></li>
         @endif
-        <div class="contato">
-            <img src="" alt="">
-            <li><a href="{{ $caminhoOpcao6 }}">Usuário</a></li>
-        </div>
     </ul>
 </div>
