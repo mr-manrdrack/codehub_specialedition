@@ -12,7 +12,18 @@
 
 <body>
     <nav class="navbar">
-        <x-navbar home="/coordenador"  opcao1="Add Horário" caminhoOpcao1="add_horario" opcao2="Add Boletim" caminhoOpcao2="add_boletim" opcao3="Analisar Turma" caminhoOpcao3="analisar_turma" opcao4="Add Refeição" caminhoOpcao4="add_refeicoes" opcao5="Add Eventos" caminhoOpcao5="eventos" opcao6="Usuários" caminhoOpcao6="usuarios"/>    </nav>
+        <x-navbar 
+            home="/coordenador"
+            opcao1="Add Horário" caminhoOpcao1="add_horario"
+            opcao2="Add Boletim" caminhoOpcao2="add_boletim"
+            opcao3="Analisar Turma" caminhoOpcao3="analisar_turma"
+            opcao4="Add Refeição" caminhoOpcao4="add_refeicoes"
+            opcao5="Add Eventos" caminhoOpcao5="eventos"
+            opcao6="Add Usuários" caminhoOpcao6="add_usuarios"
+            opcao7="Add Disciplina" caminhoOpcao7="add_disciplina"
+            opcao8="" caminhoOpcao8=""
+        />    
+    </nav>
     <x-titulo titulo="Analisar Turma" subtitulo="" />
     <x-tabela_analisar_turma />
     <x-footer />
