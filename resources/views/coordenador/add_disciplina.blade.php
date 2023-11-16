@@ -24,9 +24,9 @@
 			opcao8="" caminhoOpcao8=""
 		/>	
 	</nav>
-	<x-titulo titulo="Adicionar Usuários" subtitulo="" />
+	<x-titulo titulo="Adicionar Matéria" subtitulo="" />
 	<div class="container">
-        <form action="">
+        <form action="" method="POST">
             @csrf
             <div class="label_input">
                 <label  for="materia">Matéria</label>
