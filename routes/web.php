@@ -126,7 +126,7 @@ Route::get('/coordenador/eventos', [EventsSupervisorController::class, 'create']
 
 Route::post('/coordenador/eventos', [EventsSupervisorController::class, 'store'])->name('coordenador_add_eventos.store');
 
-Route::get('/coodernador/add_disciplina', [AddDisciplina::class, 'index'])->name('');
+Route::get('/coordenador/add_disciplina', [AddDisciplina::class, 'index']);
 
 Route::get('/coordenador/add_usuarios', [AddUserController::class, 'index'])->name('add_usuarios.index');
 
