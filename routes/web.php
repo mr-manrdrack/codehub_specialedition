@@ -1,33 +1,36 @@
 <?php
-
-use App\Http\Controllers\AddUserController;
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\HomeProfessorController;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\HomeAlunoController;
-use App\Http\Controllers\SelectClassController;
-use App\Http\Controllers\NewsletterController;
-use App\Http\Controllers\GradeController;
-use App\Http\Controllers\FoodController;
-use App\Http\Controllers\NoteController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\UserProfessorController;
-use App\Http\Controllers\CadastroController;
-use App\Http\Controllers\GradeProfessorController;
-use App\Http\Controllers\SelectClassProfessorController;
-use App\Http\Controllers\SelectClassProfessorNoteController;
-use App\Http\Controllers\CallClassProfessorController;
-use App\Http\Controllers\NewsletterProfessorController;
-use App\Http\Controllers\AnalisysClassController;
-use App\Http\Controllers\AnalisysSupervisorController;
-use App\Http\Controllers\FoodSupervisorController;
-use App\Http\Controllers\GradeSupervisorController;
-use App\Http\Controllers\NewsletterSupervisorController;
-use App\Http\Controllers\UsersController;
-use App\Http\Controllers\UserSupervisorController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EventsController;
-use App\Http\Controllers\EventsSupervisorController;
+
+use App\Http\Controllers\{
+    AddUserController,
+    AuthController,
+    HomeProfessorController,
+    LoginController,
+    HomeAlunoController,
+    SelectClassController,
+    NewsletterController,
+    GradeController,
+    FoodController,
+    NoteController,
+    UserController,
+    UserProfessorController,
+    CadastroController,
+    GradeProfessorController,
+    SelectClassProfessorController,
+    SelectClassProfessorNoteController,
+    CallClassProfessorController,
+    NewsletterProfessorController,
+    AnalisysClassController,
+    AnalisysSupervisorController,
+    FoodSupervisorController,
+    GradeSupervisorController,
+    NewsletterSupervisorController,
+    UsersController,
+    UserSupervisorController,
+    EventsController,
+    EventsSupervisorController,
+    AddDisciplina
+};
 
 
 /*
@@ -123,7 +126,7 @@ Route::get('/coordenador/eventos', [EventsSupervisorController::class, 'create']
 
 Route::post('/coordenador/eventos', [EventsSupervisorController::class, 'store'])->name('coordenador_add_eventos.store');
 
-Route::get('/coordenador/usuarios', [UsersController::class, 'index'])->name('usuarios.index');
+Route::get('/coodernador/add_disciplina', [AddDisciplina::class, 'index'])->name('');
 
 Route::get('/coordenador/add_usuarios', [AddUserController::class, 'index'])->name('add_usuarios.index');
 
