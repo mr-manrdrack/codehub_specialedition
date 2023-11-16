@@ -1,0 +1,52 @@
+.navbar {
+  background-color: var(--azul-escuro); 
+  color: var(--branco); 
+  font-size: 16px;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 135px;
+}
+
+.logo {
+  padding-top: 5px;
+}
+
+.menu {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu li, .contato {
+  display: inline-block;
+}
+
+
+.menu img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: translate(0, 30%);
+  cursor: pointer;
+}
+
+.menu li {
+  margin: 20px;
+}
+
+.menu a {
+  color: var(--branco);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: var(--amarelo)
+}
+
+.colornav a{
+  color: var(--amarelo);
+}

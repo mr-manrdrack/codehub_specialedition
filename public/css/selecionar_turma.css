@@ -1,0 +1,27 @@
+.container {
+  background-color: var(--cinza-claro);
+  border: 3px solid var(--azul-escuro);
+  font-size: 14px;
+}
+
+.container .opcoes{
+  width: 100%;
+}
+
+.container hr {
+  margin-top: 60px;
+  border: 1px solid var(--azul-escuro);
+}
+
+.container li {
+  color: var(--azul-escuro);
+  padding: 20px;
+  margin: 30px;
+  background-color: var(--cinza-medio);
+  cursor: pointer;
+}
+
+.container a {
+  color: var(--azul-escuro);
+}
+

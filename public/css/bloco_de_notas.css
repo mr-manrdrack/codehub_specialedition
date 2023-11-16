@@ -1,0 +1,131 @@
+.content {
+	display: flex;
+	position: relative;
+}
+
+.new-nota {
+	width: 390px;
+	height: 78px;
+	text-align: center;
+	font-size: 36px;
+	font-style: italic;
+	font-weight: 600;
+	line-height: normal;
+	border-radius: 7px;
+	background: var(--amarelo);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	position: absolute;
+}
+
+.textarea {
+	width: 769px;
+	height: 470px;
+	padding: 15px;
+	font-size: 16px;
+	background-color: var(--cinza-claro);
+	resize: none;
+	border-width: 0;
+	border-radius: 7px;
+	position: absolute;
+	top: 60px;
+	right: 0;
+}
+
+#tituloInput {
+	right: 0;
+	padding: 15px;
+	font-size: 16px;
+	background-color: var(--cinza-claro);
+	border-width: 0;
+	width: 769px;
+	height: 45px;
+	border-radius: 7px;
+	font-size: 20px;
+	position: absolute;
+}
+
+.card {
+	border: none;
+	padding: 20px;
+	margin: 10px;
+	width: 350px;
+	height: 130px;
+	border-radius: 10px;
+	color: var(--branco);
+	background: var(--azul-escuro);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	direction: ltr;
+}
+
+.dropdown-content {
+	display: none;
+	background-color: var(--branco);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content span {
+	padding: 7px 17px;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.dropdown-content span:hover {
+	background-color: var(--cinza-claro);
+}
+
+.card:hover .dropdown-content {
+	display: block;
+	color: var(--azul-escuro);
+}
+
+#cardsContainer {
+	direction: rtl;
+	overflow: auto;
+	width: 390px;
+	height: 600px;
+	border-radius: 10px;
+	background-color: var(--cinza-claro);
+
+}
+
+.card h2 {
+	position: relative;
+}
+
+.card h2::after {
+	content: "⋮";
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+}
+
+.scrollable {
+	position: absolute;
+	top: 132px;
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.scrollable::-webkit-scrollbar {
+	width: 12px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+	background-color: var(--amarelo);
+	border-radius: 10px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+	background-color: var(--cinza-claro);
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}

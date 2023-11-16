@@ -1,0 +1,116 @@
+/* Reset de estilos para todos os elementos */
+*, *:before, *:after {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Estilos globais do body */
+body {
+  background-color: #101E3C;
+}
+
+/* Estilos do header */
+.header {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos do título */
+.title h1 {
+  color: #fafafa;
+  font-size: 20px;
+  margin: 15px;
+  font-weight: 400;
+}
+
+/* Estilos do container */
+.container {
+  background-color: #3155A4;
+  width: 422px;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+}
+
+/* Estilos dos rótulos do formulário */
+form label {
+  color: #fafafa;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Estilos dos campos de entrada do formulário */
+form input {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #112B64;
+  border: none;
+  color: #fafafa;
+  padding: 0 20px;
+  margin-top: 10px; /* Espaçamento entre os campos de entrada */
+}
+
+/* Estilos do placeholder dos campos de entrada */
+form input::placeholder {
+  color: #c4bebe;
+}
+
+/* Define um espaçamento entre campos de entrada */
+.input-container {
+  margin-top: 15px;
+}
+
+/* Define um espaçamento entre campos de entrada usuario */
+.usuario {
+  margin-top: 0;
+}
+
+/* Estilos do botão de envio do formulário */
+form button {
+  width: 100%;
+  height: 45px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #FFB511;
+  cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+}
+
+/* Transição suave para o botão quando passa o mouse sobre ele */
+form button:hover {
+  transition: background-color ease-in-out 0.3s;
+  background-color: #f0a608;
+}
+
+/* Estilos para as opções */
+.opcoes {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fafafa;
+  font-size: 14px;
+}
+
+/* Estilos para links nas opções */
+.opcoes a {
+  color: #FFB511;
+}
+
+/* Estilos responsivos para telas com largura máxima de 768px */
+@media (max-width: 768px) {
+  .container {
+      width: 350px; /* Reduz a largura do container para ajustar o layout */
+  }
+}

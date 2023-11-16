@@ -1,0 +1,47 @@
+.container {
+  max-width: 1200px;
+  margin: 30px auto; 
+}
+
+.grid-container{
+  display: grid;
+  column-gap: 30px;
+  row-gap: 30px;
+  grid-gap: 30px;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.grid-item{
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 16px;
+  width: 150px;
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+  line-height: normal;
+}
+
+.item1{
+  background-color: var(--amarelo);
+  font-weight: 600;
+  color: #000;
+  font-size: 20px;
+  font-style: italic;
+  line-height: normal;
+  border: none;
+}
+
+.celula-blue{
+  background-color: var(--azul-escuro);
+  border: none;
+}
+
+.amarelo{
+  font-weight: 600;
+  font-style: italic;
+  color: var(--amarelo);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}

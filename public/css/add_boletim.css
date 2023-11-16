@@ -1,0 +1,69 @@
+form {
+  position: relative;
+}
+
+#select {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabela {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* Três colunas com largura igual */
+}
+
+.celula {
+  margin: 22px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.title_table {
+  border: 3px solid var(--azul-escuro);
+  padding: 14px;
+}
+
+input {
+  text-align: center;
+  font-size: 16px;
+  padding: 15px;
+  font-weight: 600;
+  background-color: #ffffff00;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.nome_amarelo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.azul_title {
+    padding: 15px;
+}
+
+.azul {
+  background-color: var(--azul-escuro);
+  color: var(--cinza-medio);
+}
+
+.cinza {
+  background-color: var(--cinza-medio);
+  color: var(--azul-escuro);
+}
+
+.amarelo {
+  background-color: var(--amarelo);
+  color: var(--azul-escuro);
+}
+
+.azul input:focus {
+  color: var(--cinza-medio);
+}
+
+.azul input {
+  color: var(--cinza-medio);
+}
+

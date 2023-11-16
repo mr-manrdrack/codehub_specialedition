@@ -1,0 +1,83 @@
+form {
+    position: relative;
+}
+
+.tabela {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.celula_d {
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.celula {
+    margin: 22px;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+.celula input {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--azul-escuro);
+    border: 3px solid var(--azul-escuro);
+    background-color: var(--background);
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+}
+
+.celula input:nth-child(1){
+    margin-bottom: 15px;
+}
+
+.horario_grid {
+    background-color: var(--azul-escuro);
+    height: 55px;
+    color: var(--amarelo);
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.descricao_grid {
+    color: var(--amarelo);
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+}
+
+.descricao_grid span {
+    background-color: var(--azul-escuro);
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.descricao_grid span:nth-child(1) {
+    margin-bottom: 15px;
+}
+
+#select {
+    position: absolute;
+    top: 23px;
+    left: -10px;
+}
+
+#select select {
+    width: 337px;
+    height: 55px;
+    background-color: var(--azul-escuro);
+    color: var(--cinza-medio);
+    transition: ease-in-out .2s;
+}
+#select select:hover {
+    background-color: var(--background);
+    color: var(--azul-escuro);
+}

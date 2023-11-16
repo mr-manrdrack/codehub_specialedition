@@ -1,0 +1,62 @@
+table,
+th,
+td {
+    border: 2px solid var(--azul-escuro);
+    background: var(--cinza-medio);
+    border-collapse: collapse;
+}
+
+#tabela {
+    margin-top: 24px;
+}
+
+#tabela table {
+    margin: 0 auto;
+}
+
+.turma {
+    width: 537px;
+    height: 54px;
+    background: var(--azul-escuro);
+    color: var(--cinza-medio);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.nome {
+    width: 537px;
+    height: 54px;
+    padding: 15px;
+    color: var(--azul-escuro);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.normal_cell {
+    width: 90px;
+    flex-shrink: 0;
+    text-align: center;
+    color: var(--azul-escuro);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.blue_cell {
+    background: var(--azul-escuro);
+    width: 90px;
+    flex-shrink: 0;
+    border: 2px solid var(--cinza-medio);
+    text-align: center;
+    color: var(--cinza-medio);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-top-color: var(--azul-escuro);
+}

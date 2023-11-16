@@ -1,0 +1,162 @@
+/* Reset de estilos para todos os elementos */
+*, *:before, *:after {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  body {
+    background-color: #C6C6C6;
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  /* Estilos do navbar */
+  .navbar {
+    background-color: #101E3C; /* Cor de fundo do navbar */
+    color: #fff; /* Cor do texto no navbar */
+    font-size: 16px;
+  }
+  
+  .container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 135px;
+  }
+  
+  .menu {
+    font-size: 16px;
+  }
+  
+  .menu li, .contato {
+    display: inline-block;
+  }
+  
+  
+  .menu img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: translate(0, 30%);
+    cursor: pointer;
+  }
+  
+  .menu li {
+    margin: 20px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #FFA500; /* Cor do texto ao passar o mouse */
+  }
+  
+  #esquerda { /* CSS da parte esquerda da tela incial*/
+    display: flex;
+    width: 570px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 55px 55px;
+    flex-wrap: wrap;
+    margin-left: 135px;
+    margin-top: 60px;
+    padding-bottom: 50px;
+  }
+  
+  /* CSS dos botões da tela incial*/
+  #esquerda button {
+    width: 220px;
+    height: 172px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #101E3C;
+    border: none;
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+  }
+  
+  #esquerda button svg {
+    width: 60px;
+    height: 60px;
+    margin-top: 18px;
+    flex-shrink: 0;
+  }
+  
+  #esquerda button div {
+    border-radius: 0px 0px 10px 10px;
+    background: #FFB511;
+    width: 220px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-bottom: -23px;
+  }
+  
+  #esquerda button div h3 {
+    color: #101E3C;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -5px;
+  }
+  
+  #direita {
+    position: absolute;
+    right: 135px;
+    top: 50%;
+    transform: translateY(-40%);
+  }
+  
+  /* Caroussel */
+  .carousel-container {
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #D9D9D9;
+    box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .carousel-slide {
+    float: left;
+    width: 600px;
+    display: none;
+  }
+  
+  .carousel-slide img {
+    width: 600px;
+    height: 450px;
+    flex-shrink: 0;
+  }
+  
+  .carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+    
+  }
+  
+  .indicator {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #999;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: #101E3C;
+  }

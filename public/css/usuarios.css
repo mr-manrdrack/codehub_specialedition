@@ -1,0 +1,124 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.botao_link{
+    margin-left: 135px;
+}
+
+.botao_link button {
+    width: 350px;
+    font-size: 16px;
+    padding: 15px;
+    font-weight: 600;
+    color: var(--background);
+    background: var(--azul-escuro);
+    border: 3px solid var(--azul-escuro);
+    cursor: pointer;
+    transition: ease-in-out .2s;
+}
+
+.botao_link button:hover {
+    color: var(--azul-escuro);
+    background: var(--background);
+}
+
+.yellow_card {
+    width: 485px;
+    height: 85.475px;
+    border-radius: 10px;
+    background: var(--amarelo);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    color: var(--azul-escuro);
+}
+
+.yellow_card h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.filter {
+    margin-top: 15px;
+}
+
+.filter label {
+    font-size: 18px;
+    color: var(--azul-escuro);
+    font-weight: 600;
+}
+
+.filter select {
+    border-radius: 5px;
+    height: 40px;
+    width: 210px;
+    text-align: center;
+    border: 3px solid var(--azul-escuro);
+    background: var(--background);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+}
+
+.aplicarFiltro {
+    width: 139px;
+    height: 40px;
+    border: none;
+    background: var(--azul-escuro);
+    cursor: pointer;
+    color: var(--cinza-medio);
+    font-size: 16px;
+    font-weight: 600;
+    transition: ease-in-out .2s;
+}
+
+.filter button:hover {
+    background-color: var(--background);
+    color: var(--azul-escuro);
+    border: 3px solid var(--azul-escuro);
+}
+
+.card {
+    width: 480px;
+    height: 141px;
+    border-radius: 7px;
+    background: var(--azul-escuro);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card button {
+    border: none;
+    background-color: var(--azul-escuro);
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.card div {
+    margin-right: 20px;
+}
+
+.card div h3 {
+    color: var(--branco);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card div h4 {
+    color: var(--branco);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
