@@ -133,7 +133,7 @@
             </a>
         </section>
         <section id="direita">
-            <a href="/coordenador/add_evento">
+            <a href="/coordenador/eventos">
                 <div class="carousel-container">
                     <div class="carousel-slide">
                         <img src="https://live.staticflickr.com/7333/14119970151_fd7421110f_b.jpg" alt="Imagem 1">
