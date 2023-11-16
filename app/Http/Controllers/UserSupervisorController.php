@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Usuarios;
 
 class UserSupervisorController extends Controller
 {
@@ -11,7 +12,7 @@ class UserSupervisorController extends Controller
      */
     public function index()
     {
-        return view('/coordenador/usuario_coordenador');
+        return view('/coordenador/add_usuario');
     }
 
     /**
@@ -27,7 +28,15 @@ class UserSupervisorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $usuario = new Usuarios;
+
+        $usuario->nome = $request->nome;
+        $usuario->cargo = $request->cargo;
+        $usuario->Matricula = $request->Matricula;
+
+        $usuario -> save();
+
+        return redirect('/coordenador/add_usuarios');
     }
 
     /**
