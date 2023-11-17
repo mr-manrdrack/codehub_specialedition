@@ -44,9 +44,9 @@ use App\Http\Controllers\{
 |
 */
 
-Route::get('/', [AuthController::class, 'login']);
+Route::post('/', [LoginController::class, 'store'])->name('login.store');
 
-Route::get('/', [AuthController::class, 'index'])->name('login.index');
+Route::get('/', [LoginController::class, 'index'])->name('login.index');
 
 Route::get('/cadastro', [CadastroController::class, 'index'])->name('cadastro.index');
 

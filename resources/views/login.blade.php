@@ -27,7 +27,7 @@
     <!-- Conteúdo principal -->
     <div class="container">
         <!-- Formulário de login -->
-        <form id="loginForm" action="{{ route('login.index') }}" method="post">
+        <form id="loginForm" action="{{ route('login.store') }}" method="post">
             @csrf
             <div>
                 <!-- Campo de usuário ou email -->
