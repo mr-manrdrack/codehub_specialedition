@@ -27,7 +27,15 @@ class LoginController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if($request->email== "xavierricardo@gmail.com"){
+            return redirect('/aluno');
+        }elseif ($request->email == "matheusfarias@gmail.com") {
+            return redirect('/professor');
+        }elseif($request->email == 'elegivania@gmail.com'){
+            return redirect('/coordenador');
+        }else{
+            abort(403,'Algo errado');
+        }
     }
 
     /**
