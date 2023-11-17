@@ -93,7 +93,7 @@ class NewsletterController extends Controller
             $notafinal[] = $nota->NotaFinal;
         }
 
-        var_dump($arrayListanotasa);
+        // var_dump($arrayListanotasa);
 
         return view('aluno/boletim', [
             'nomedisciplina' => $nomedisciplina,
