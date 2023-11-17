@@ -26,7 +26,7 @@
 		/>
 	</nav>
 	<x-titulo titulo="Realizar Chamada" subtitulo="Professor: Pedro Gomes da Silva" />
-	<x-realizar_chamada />
+	<x-realizar_chamada :disc="$disc" :turmas="$turmas" :alunos="$alunos" />
     <br><br>
 	<x-footer />
     <script src="/js/realizar_chamada.js"></script>

@@ -2,20 +2,19 @@
     <form action="" method="POST">
         @csrf
         <div id="select">
-            <select>
-                <option value="todos">SELECIONAR DIA:</option>
-                <option value="opcao1">01/01/2024</option>
-                <option value="opcao2">02/01/2024</option>
-                <option value="opcao3">03/01/2024</option>
-                <option value="opcao4">04/01/2024</option>
-                <option value="opcao4">05/01/2024</option>
-            </select>
+            <input class="naosei" type="date" name="dia" id="dia">
             <select id="select_2">
-                <option value="todos">SELECIONAR AULA:</option>
-                <option value="opcao1">PORTUGUÊS</option>
-                <option value="opcao2">ARTES</option>
-                <option value="opcao3">EDUCAÇÃO FISICA</option>
-                <option value="opcao4">INGLÊS</option>
+                <option>SELECIONAR DISCIPLINA:</option>
+                @foreach($disc as $disciplina)
+                <option value="">{{ $disciplina -> nomesdisciplina}}</option>
+                @endforeach
+            </select>
+
+            <select name="select_3" id="select_3">
+                <option value="null">SELECIONE A TURMA:</option>
+                <option value="1TDSA">1 TDS A</option>
+                <option value="1TDSB">1 TDS B</option>
+                <option value="1TDSC">1 TDS C</option>
             </select>
         </div>
 
@@ -26,16 +25,18 @@
                 <div class="celula azul azul_title tamanho">FNJ</div>
                 <div class="celula amarelo title_table tamanho">PFA</div>
 
-                @for($i = 0; $i < 4; $i++) 
-                <div class="celula cinza conteudo">ZEZINHO JUCELINO DA SILVA</div>
-                <div class="celula">
-                    <input class="checkbox{{ $i }}" type="checkbox" name="opcao.{{ $i }}" id="fj{{ $i }}">
-                </div>
-                <div class="celula">
-                    <input class="checkbox{{ $i }}" type="checkbox" name="opcao.{{ $i }}" id="fnj.{{ $i }}">
-                </div>
-                <div class="celula amarelo">0%</div>
-                @endfor
+               
+
+                @foreach($alunos as $aluno)
+                    <div class="celula cinza conteudo">{{$aluno -> nome}}</div>
+                    <div class="celula">
+                        <input class="checkbox{{ $loop->index }}" type="checkbox" name="opcao.{{ $loop->index }}" id="fj{{ $loop->index }}">
+                    </div>
+                    <div class="celula">
+                        <input class="checkbox{{ $loop->index }}" type="checkbox" name="opcao.{{ $loop->index }}" id="fnj.{{ $loop->index }}">
+                    </div>
+                    <div class="celula amarelo">0%</div>
+                @endforeach
             </div>
 
             <div class="spans">

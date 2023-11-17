@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 
@@ -11,7 +12,14 @@ class SelectClassProfessorController extends Controller
      */
     public function index()
     {
-        return view('/professor/realizar_chamada/selecionar_turma_realizar_chamada_professor');
+        $disciplinas = DB::table('disciplinas')->get();
+        $turmas = DB::table('turmas')->get();
+        $alunos = DB::table('usuarios')->where('cargo', 'aluno')->get();
+        return view('professor.realizar_chamada', [
+            'disc' => $disciplinas,
+            'turmas' => $turmas,
+            'alunos' => $alunos
+        ]);
     }
 
     /**

@@ -8,12 +8,14 @@ use Illuminate\View\Component;
 
 class realizar_chamada extends Component
 {
-    /**
-     * Create a new component instance.
-     */
-    public function __construct()
+    public $disc, $turmas, $alunos;
+    public $MatriculaAluno;
+
+    public function __construct($disc, $turmas, $alunos)
     {
-        //
+        $this->disc = $disc;
+        $this->turmas = $turmas;
+        $this->alunos = $alunos;
     }
 
     /**
