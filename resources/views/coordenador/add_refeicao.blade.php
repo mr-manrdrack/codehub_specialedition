@@ -38,11 +38,11 @@
                 descricao1="Refeição"
                 descricao2="Bebida"
             />
-            <input class="botao" type="submit" value="SALVAR">
-
             <div class="label_input">
                 <input type="date" name="dia">
             </div>
+
+            <input class="botao" type="submit" value="SALVAR">
         </form>
     </div>
     <x-footer />
