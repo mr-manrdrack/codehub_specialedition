@@ -9,11 +9,12 @@ class usuarios extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'MatriculaAluno';
+    protected $primaryKey = 'Matricula';
     protected $fillable = [
         'Matricula',
         'usuario',
         'nome',
+        'turma',
         'email',
         'senha',
         'cargo'

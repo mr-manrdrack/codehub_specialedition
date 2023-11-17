@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Usuarios;
+use Illuminate\Support\Facades\DB;
 
 class UserSupervisorController extends Controller
 {
@@ -12,7 +13,9 @@ class UserSupervisorController extends Controller
      */
     public function index()
     {
-        return view('/coordenador/add_usuario');
+        $turmas = DB::table('usuarios')->select('turma')->get();
+
+        return view('coordenador.add_usuario', ['turmas' => $turmas]);
     }
 
     /**
@@ -33,6 +36,7 @@ class UserSupervisorController extends Controller
         $usuario->nome = $request->nome;
         $usuario->cargo = $request->cargo;
         $usuario->Matricula = $request->Matricula;
+        $usuario->turma = $request->turma;
 
         $usuario -> save();
 

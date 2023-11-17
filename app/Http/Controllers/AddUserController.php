@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Models\Usuarios;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
 
 class AddUserController extends Controller
 {
@@ -14,7 +14,9 @@ class AddUserController extends Controller
      */
     public function index()
     {
-        return view('coordenador.add_usuario');
+        $turmas = DB::table('usuarios')->select('turma')->get();
+
+        return view('coordenador.add_usuario', ['turmas' => $turmas]);
     }
 
     /**
@@ -32,12 +34,12 @@ class AddUserController extends Controller
     {
         $usuariosBD = new Usuarios;
 
-        $usuariosBD->MatriculaAluno = $request->matricula;
+        $usuariosBD->Matricula = $request->matricula;
         $usuariosBD->senha = Hash::make($request->matricula);
         $usuariosBD->usuario = $request->matricula;
         $usuariosBD->nome = $request->nome;
         $usuariosBD->cargo = $request->funcao;
-
+        $usuariosBD->turma = "2 ssa";
         $usuariosBD->save();
 
         return redirect()->route('add_usuarios.index');
