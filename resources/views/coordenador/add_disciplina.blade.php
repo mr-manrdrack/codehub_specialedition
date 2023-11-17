@@ -29,9 +29,9 @@
         <form action="" method="POST">
             @csrf
             <div class="label_input">
-                <label  for="materia">Matéria</label>
+                <label  for="materia">Disciplina</label>
                 <br>
-                <input type="text" placeholder="Digite a Matéria" >
+                <input type="text" placeholder="Digite a Disciplina" >
             </div>
 
             <input class="botao" type="submit" value="SALVAR">
