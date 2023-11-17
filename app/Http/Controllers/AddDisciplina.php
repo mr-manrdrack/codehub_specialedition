@@ -32,7 +32,7 @@ class AddDisciplina extends Controller
 
         $add_disciplina->nomesdisciplina = $request->nomesdisciplina;
 
-        $add_disciplina -> save();
+        $add_disciplina -> save(); /*sssss*/
 
         return redirect('coordenador/add_disciplina');
     }
