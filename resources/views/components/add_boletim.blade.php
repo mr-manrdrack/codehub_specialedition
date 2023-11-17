@@ -8,7 +8,7 @@
     <label for="select">Selecionar Turma</label>
     <select>
         @foreach($turmas as $turma)
-            <option value="">{{ $turma -> serieturma}}</option>
+            <option value="">{{ $turma -> turma}}</option>
         @endforeach
     </select>
 </div>

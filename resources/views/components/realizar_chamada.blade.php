@@ -12,9 +12,9 @@
 
             <select name="select_3" id="select_3">
                 <option value="null">SELECIONE A TURMA:</option>
-                <option value="1TDSA">1 TDS A</option>
-                <option value="1TDSB">1 TDS B</option>
-                <option value="1TDSC">1 TDS C</option>
+                @foreach($turmas as $turma)
+                    <option value="">{{ $turma -> turma}}</option>
+                @endforeach
             </select>
         </div>
 
