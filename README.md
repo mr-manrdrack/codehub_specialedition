@@ -1,66 +1,157 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<div align="center">  
+  <img src="https://raw.githubusercontent.com/LeonardoAlmds/codehub/main/public/img/logo350.png"/> 
+</div>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Sistema de gestão escolar
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Este repositório contém o código-fonte do Sistema de gestão escolar, um software destinado a auxiliar na organização de instituições de ensino, tanto públicas quanto privadas.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+# Linguagem de programação:
 
-## Learning Laravel
+- PHP
+# Biblioteca:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Banco de dados: MySQL
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Front-end: HTML e CSS
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Servidor: a definir
+# Ferramentas de desenvolvimento:
 
-## Laravel Sponsors
+- Git
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- GitHub
 
-### Premium Partners
+- VSCode
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- Figma
+# Controle de versão:
 
-## Contributing
+- Git
+# Documentação:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+MDN WEB DOCS, PHP Docs e Laravel.
 
-## Code of Conduct
+## Funcionalidades
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- Preview em tempo real
+- Modo tela cheia
+- Multiplataforma (web app)
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Descrição:
 
-## License
+O Sistema de gestão escolar, EduSoftware é um software que oferece as seguintes funcionalidades:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Cadastro de alunos e professores, com dados pessoais, contatos, documentação, informações acadêmicas e profissionais.
+
+- Gestão de disciplinas, turmas, eventos, atividades extracurriculares, horários de aula e professores responsáveis.
+
+- Armazenamento e compartilhamento de documentos, como atas de reuniões e aulas, planos de aula, cronogramas e outros arquivos importantes para a organização da instituição.
+
+- Registro de matrículas e acompanhamento do desempenho dos alunos em tempo real.
+# Objetivo:
+
+Desenvolver um software para a organização da gestão de instituições de ensino médio no Brasil, públicas e privadas, permitindo assim uma gestão mais eficiente dos processos administrativos e acadêmicos, visando melhorar a qualidade da educação oferecida aos alunos.
+
+# Escopo do projeto:
+
+Este projeto vai abranger as instituições de ensino fundamental e médio, com todo tipo de turno. Para isso faremos parceria com as escolas que vão adquirir por assinaturas para obter nosso software, dessa forma vamos oferecer também o suporte para correção de erros e adição de novas funcionalidades.
+
+# Equipe do projeto:
+
+- [Leonardo S. de Almeida](https://github.com/LeonardoAlmds): Líder da Equipe
+
+- [Pedro Arthur B. Moreira](https://github.com/a5ur4): Liderança no desenvolvimento Front-End
+
+- [Paulo Henrique M. da S. Brito](https://github.com/paulo-offi): Apoio no desenvolvimento Front-End
+
+- [Igor C. Nogueira](https://github.com/IgorCNogueira): Liderança no desenvolvimento Back-End
+
+- [Victor Gabriel S. Silva](https://github.com/Victor20t): Apoio no desenvolvimento Back-End
+
+- [Ricardo B. A. Xavier](https://github.com/mr-manrdrack): Liderança no desenvolvimento da documentação do projeto
+
+- Jonathan E. G. da S. Costa: Liderança na pesquisa para desenvolver a documentação do projeto
+
+- Flávio Daniell J. Timóteo: Apoio na pesquisa para desenvolver a documentação do projeto
+# Status do projeto:
+
+Em desenvolvimento.
+
+# Próximos passos:
+
+
+- Realizar testes
+
+- Lançar o software
+# Como contribuir:
+
+Se você está interessado em contribuir para este projeto, entre em contato com a equipe pelo e-mail [email protected]
+
+# Licença:
+
+Este projeto é licenciado sob a Licença [MIT](https://choosealicense.com/licenses/mit/).
+
+# Contribuições:
+
+O projeto é desenvolvido sob a metodologia de desenvolvimento colaborativo, ou seja, todos são convidados a contribuir com o desenvolvimento do software. As contribuições podem ser feitas de diversas formas, como:
+
+Reportar bugs
+
+Sugerir novas funcionalidades
+
+Criar patches
+
+Documentar o software
+# Referências:
+
+- MDN WEB DOCS: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+- PHP Docs: https://www.php.net/manual/
+
+- Laravel: https://laravel.com/
+# Código-fonte:
+
+O código-fonte do projeto está dividido em duas partes:
+
+- Back-end: desenvolvido em PHP e Laravel.
+
+- Front-end: desenvolvido em HTML e CSS.
+
+O código-fonte está disponível no repositório do projeto no GitHub.
+
+# Instalação:
+
+Para instalar o sistema, siga os seguintes passos:
+
+Clone o repositório do projeto no seu computador.
+
+`git clone https://github.com/LeonardoAlmds/codehub.git`
+
+Instale as dependências do back-end:
+
+`composer install`
+
+Crie um arquivo .env com as configurações do banco de dados.
+
+Gere uma chave de sessão:
+
+`php artisan key:generate`
+
+Execute o servidor:
+
+`php artisan serve`
+# Uso:
+
+Acesse o sistema no seu navegador.
+
+# Documentação:
+
+A documentação do projeto está disponível no site do projeto.
+
+# Contato:
+
+Para obter mais informações, entre em contato com a equipe do projeto pelo e-mail [email
