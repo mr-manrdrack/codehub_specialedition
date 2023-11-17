@@ -13,12 +13,14 @@ class add_boletim extends Component
      */
 
     public $disc, $turmas, $alunos;
+    public $MatriculaAluno;
 
-    public function __construct($disc, $turmas, $alunos)
+    public function __construct($disc, $turmas, $alunos, $MatriculaAluno)
     {
         $this->disc = $disc;
         $this->turmas = $turmas;
         $this->alunos = $alunos;
+        $this->MatriculaAluno = $MatriculaAluno;
     }
 
     /**

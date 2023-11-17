@@ -21,6 +21,7 @@
     <div class="celula cinza title_table">NOTA 5</div>
     <div class="celula azul azul_title">PROVA</div>
     <div class="celula amarelo title_table">MÉDIA</div>
+    <div class="celula azul azul_title">SALVAR</div>
 
     @foreach ($alunos as $aluno)
         <div class="celula cinza nome_amarelo">{{ $aluno->nome }}</div>
@@ -30,6 +31,7 @@
         <div class="celula azul"><input type="text" placeholder="0,0" name="nota4" id="nota4"></div>
         <div class="celula cinza"><input type="text" placeholder="0,0" name="nota5" id="nota5"></div>
         <div class="celula azul"><input type="text" placeholder="0,0" name="prova" id="prova"></div>
-        <div class="celula amarelo nome_amarelo"><input type="text" name="média" id="média"></div>
+        <div class="celula amarelo nome_amarelo">6</div>
+        <div class="celula azul"><input class="vsfd" type="submit" value="SALVAR"></div>
     @endforeach
 </div>

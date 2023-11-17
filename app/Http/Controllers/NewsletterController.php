@@ -38,83 +38,73 @@ class NewsletterController extends Controller
     public function show(Request $request)
     {
         global $nomedisciplina; $nomedisciplina = [];
-
-        global $listanotas; $listanotas = [];
+        global $listanotas; 
+        $listanotas = [
+            [], 
+            [], 
+            [], 
+            []
+        ];
         global $listafj; $listafj = [];
         global $listafnj; $listafnj = [];
         global $listaPFAP; $listaPFAP = [];
-
-        global $listanotas2; $listanotas2 = [];
-        global $listafj2; $listafj2 = [];
-        global $listafnj2; $listafnj2 = [];
         global $listaPFAS; $listaPFAS = [];
-
-        global $listanotas3; $listanotas3 = [];
-        global $listafj3; $listafj3 = [];
-        global $listafnj3; $listafnj3 = [];
         global $listaPFAT; $listaPFAT = [];
-
-        global $listanotas4; $listanotas4= [];
-        global $listafj4; $listafj4 = [];
-        global $listafnj4; $listafnj4 = [];
         global $listaPFAQ; $listaPFAQ =[];
-
-        global $mediaanual; $mediaanual = [];
-        global $notarecfinal; $notarecfinal = [];
-        global $notafinal; $notafinal = [];
+        global $mediaanual;
+        global $notarecfinal;
+        global $notafinal;
 
         $notas = DB::table('desempenhoescolar')->get();
+        $listanotasa = DB::table('desempenhoescolar')->select(['PUnidadeMedia', 'SUnidadeMedia', 'TUnidadeMedia', 'QUnidadeMedia'])->get();
+        $listafaltasBD = DB::table('desempenhoescolar')->select(['PUnidadeFJ', 'SUnidadeFJ', 'TUnidadeFJ', 'QUnidadeFJ'])->get();
+        $listafnjBD = DB::table('desempenhoescolar')->select(['PUnidadeFNJ', 'SUnidadeFNJ', 'TUnidadeFNJ', 'QUnidadeFNJ'])->get();
+        $mediaanualBD = DB::table('desempenhoescolar')->select(['MediaAnual'])->get();
+        $notarecfinalBD = DB::table('desempenhoescolar')->select(['NotaRecFinal'])->get();
+        $notafinalBD = DB::table('desempenhoescolar')->select(['NotaFinal'])->get();
+
+        $arrayListanotasa = json_decode(json_encode($listanotasa), true);
+        $arrayListafaltasBD = json_decode(json_encode($listafaltasBD), true);
+        $arrayListafnjBD = json_decode(json_encode($listafnjBD), true);
+        $arrayMediaanualBD = json_decode(json_encode($mediaanualBD), true);
+        $arrayNotarecfinalBD = json_decode(json_encode($notarecfinalBD), true);
+        $arrayNotafinalBD = json_decode(json_encode($notafinalBD), true);
+
+        foreach ($arrayListanotasa as $listanotasa) {
+            $listanotas[] = $listanotasa;
+        }
+        foreach ($arrayListafaltasBD as $listafaltas) {
+            $listafj[] = $listafaltas;
+        }
+        foreach ($arrayListafnjBD as $listafnj) {
+            $listafnj[] = $listafnj;
+        }
+        $mediaanual = $arrayMediaanualBD[0]["MediaAnual"];
+        $notarecfinal = $arrayNotarecfinalBD[0]["NotaRecFinal"];
+        $notafinal = $arrayNotafinalBD[0]["NotaFinal"];
 
         foreach ($notas as $nota) {
             $nomedisciplina[] = $nota->ComponentesCurriculares;
-            $listanotas[] = $nota->PUnidadeMedia;
-            $listafj[] = $nota->PUnidadeFJ;
-            $listafnj[] = $nota->PUnidadeFNJ;
             $listaPFAP[] = $nota->PUnidadePFA;
-            
-            $listanotas2[] = $nota->SUnidadeMedia;
-            $listafj2[] = $nota->SUnidadeFJ;
-            $listafnj2[] = $nota->SUnidadeFNJ;
             $listaPFAS[] = $nota->SUnidadePFA;
-
-            $listanotas3[] = $nota->TUnidadeMedia;
-            $listafj3[] = $nota->TUnidadeFJ;
-            $listafnj3[] = $nota->TUnidadeFNJ;
             $listaPFAT[] = $nota->TUnidadePFA;
-
-            $listanotas4[] = $nota->QUnidadeMedia;
-            $listafj4[] = $nota->QUnidadeFJ;
-            $listafnj4[] = $nota->QUnidadeFNJ;
             $listaPFAQ[] = $nota->QUnidadePFA;
-
-            $mediaanual[] = $nota->MediaAnual;
             $notarecfinal[] = $nota->NotaRecFinal;
             $notafinal[] = $nota->NotaFinal;
         }
 
+        // var_dump($arrayListanotasa);
+
         return view('aluno/boletim', [
             'nomedisciplina' => $nomedisciplina,
-
+            'listanotasa' => $listanotasa,
             'listanotas' => $listanotas,
             'listafj' => $listafj,
             'listafnj' => $listafnj,
             'listaPFAP' => $listaPFAP,
-
-            'listanotas2' => $listanotas2,
-            'listafj2' => $listafj2,
-            'listafnj2' => $listafnj2,
             'listaPFAS' => $listaPFAS,
-
-            'listanotas3' => $listanotas3,
-            'listafj3' => $listafj3,
-            'listafnj3' => $listafnj3,
             'listaPFAT' => $listaPFAT,
-
-            'listanotas4' => $listanotas4,
-            'listafj4' => $listafj4,
-            'listafnj4' => $listafnj4,
             'listaPFAQ' => $listaPFAQ,
-
             'mediaanual' => $mediaanual,
             'notarecfinal' => $notarecfinal,
             'notafinal' => $notafinal

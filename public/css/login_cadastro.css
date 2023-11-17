@@ -114,3 +114,24 @@ form button:hover {
       width: 350px; /* Reduz a largura do container para ajustar o layout */
   }
 }
+
+/*Checkbox do cadastro*/
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #f0a608 ;
+}
+
+label {
+  margin-left: 10px;
+}
+
+label a {
+  color: #f0a608;
+  text-decoration: underline;
+}

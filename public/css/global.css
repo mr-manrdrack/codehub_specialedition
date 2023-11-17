@@ -113,8 +113,8 @@ select {
 }
 
 footer {
-  text-align: center;
-  padding: 10px;
-  padding-bottom: 30px;
-  color: #999;
+	text-align: center;
+	padding: 10px;
+	padding-bottom: 30px;
+	color: #999;
 }

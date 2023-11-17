@@ -29,9 +29,9 @@
         <form action="{{route('add_disciplina.store')}}" method='post'>
             @csrf
             <div class="label_input">
-                <label  for="">Matéria</label>
+                <label  for="materia">Disciplina</label>
                 <br>
-                <input type="text" name="nomesdisciplina" placeholder="Digite a Matéria" >
+                <input type="text" name="nomesdisciplina" placeholder="Digite a Disciplina" >
             </div>
 
             <input class="botao" type="submit" value="SALVAR">

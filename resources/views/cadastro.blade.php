@@ -46,6 +46,9 @@
                     <label for="password">Senha:</label><br>
                     <input type="password" name="senha" id="password" required placeholder="Digite sua senha">
                 </div>
+                <!-- Checkbox -->   
+                <input type="checkbox" id="aceito" name="aceito">
+                <label for="aceito">Li e aceito os <a href="https://drive.google.com/file/d/1Ra1SzXXVUzJttGKiUFw0iL0pGUCKOR3U/view?usp=sharing" target="_blank">termos de adesão</a></label>
                 <!-- Botão de envio do formulário -->
                 <button type="submit">Cadastrar</button>
             </div>
