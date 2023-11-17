@@ -20,7 +20,7 @@
             <img src="/img/logo150.png" alt="">
             <ul class="menu">
                 <div class="contato">
-                    <img src="" alt="">
+                    <img src="https://i.pinimg.com/736x/ce/53/68/ce5368780436471ae42bcd63a6796e00.jpg" alt="">
                     <li><a href="#">Matheus</a></li>
                 </div>
             </ul>
@@ -145,5 +145,6 @@
 
         </section>
     </main>
+    <x-footer />
     <script src="/js/dashboard.js"></script>
 </body>

@@ -160,3 +160,10 @@
   .indicator.active {
     background-color: #101E3C;
   }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 30px;
+    color: #999;
+  }

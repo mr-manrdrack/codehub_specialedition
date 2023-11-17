@@ -20,7 +20,7 @@
             <img src="/img/logo150.png" alt="">
             <ul class="menu">
                 <div class="contato">
-                    <img src="" alt="">
+                    <img src="https://img.myloview.cz/nalepky/default-avatar-profile-icon-vector-social-media-user-photo-400-205577532.jpg" alt="">
                     <li><a href="#">Eligivania</a></li>
                 </div>
             </ul>
@@ -155,5 +155,6 @@
 
         </section>
     </main>
+    <x-footer />
     <script src="/js/dashboard.js"></script>
 </body>
