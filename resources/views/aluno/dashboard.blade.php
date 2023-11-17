@@ -21,7 +21,7 @@
             <ul class="menu">
                 <div class="contato">
                     <img src="" alt="">
-                    <li><a href="/aluno/usuario">Usuário</a></li>
+                    <li><a href="/aluno/usuario">Ricardo</a></li>
                 </div>
             </ul>
         </div>
