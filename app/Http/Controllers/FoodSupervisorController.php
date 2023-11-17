@@ -29,6 +29,7 @@ class FoodSupervisorController extends Controller
     public function store(Request $request)
     {
         $modelCardapio = new Cardapio;
+        $modelCardapio->dia = $request->dia;
 
         $modelCardapio->SegundaBebidaManha = $request->celula2_0;
         $modelCardapio->SegundaComidaManha = $request->celula1_0;
@@ -64,6 +65,8 @@ class FoodSupervisorController extends Controller
         $modelCardapio->SextaComidaAlmoço = $request->celula9_1;
         $modelCardapio->SextaBebidaTarde = $request->celula10_2;
         $modelCardapio->SextaComidaTarde = $request->celula9_2;
+
+        
         
         $modelCardapio->save();
         return redirect()->route('add_refeicoes.index');
