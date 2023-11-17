@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Disciplinas;
 
 class AddDisciplina extends Controller
 {
@@ -27,7 +28,13 @@ class AddDisciplina extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $add_disciplina = new Disciplinas;
+
+        $add_disciplina->nomesdisciplina = $request->nomesdisciplina;
+
+        $add_disciplina -> save(); /*sssss*/
+
+        return redirect('coordenador/add_disciplina');
     }
 
     /**

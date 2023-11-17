@@ -14,9 +14,9 @@ class NewsletterProfessorController extends Controller
     {
         $disciplinas = DB::table('disciplinas')->get();
         $turmas = DB::table('turmas')->get();
-        $alunos = DB::table('alunos')->get();
-
-        return view('professor.add_boletim', [
+        $alunos = DB::table('usuarios')->where('cargo', 'aluno')->get();
+    
+        return view('/coordenador/add_boletim', [
             'disc' => $disciplinas,
             'turmas' => $turmas,
             'alunos' => $alunos

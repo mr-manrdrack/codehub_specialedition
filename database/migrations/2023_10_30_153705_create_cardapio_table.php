@@ -14,42 +14,42 @@ return new class extends Migration
         Schema::create('cardapios', function (Blueprint $table) {
             $table->id();
 
-            //$table->string('dia');
+            $table->date('dia');
             
-            $table->string('SegundaBebidaManha', 255)->nullable(false);
-            $table->string('SegundaComidaManha', 255)->nullable(false);
-            $table->string('SegundaBebidaAlmoço', 255)->nullable(false);
-            $table->string('SegundaComidaAlmoço', 255)->nullable(false);
-            $table->string('SegundaBebidaTarde', 255)->nullable(false);
-            $table->string('SegundaComidaTarde', 255)->nullable(false);
+            $table->string('SegundaBebidaManha', 255)->nullable(true);
+            $table->string('SegundaComidaManha', 255)->nullable(true);
+            $table->string('SegundaBebidaAlmoço', 255)->nullable(true);
+            $table->string('SegundaComidaAlmoço', 255)->nullable(true);
+            $table->string('SegundaBebidaTarde', 255)->nullable(true);
+            $table->string('SegundaComidaTarde', 255)->nullable(true);
 
-            $table->string('TerçaBebidaManha', 255)->nullable(false);
-            $table->string('TerçaComidaManha', 255)->nullable(false);
-            $table->string('TerçaBebidaAlmoço', 255)->nullable(false);
-            $table->string('TerçaComidaAlmoço', 255)->nullable(false);
-            $table->string('TerçaBebidaTarde', 255)->nullable(false);
-            $table->string('TerçaComidaTarde', 255)->nullable(false);
+            $table->string('TerçaBebidaManha', 255)->nullable(true);
+            $table->string('TerçaComidaManha', 255)->nullable(true);
+            $table->string('TerçaBebidaAlmoço', 255)->nullable(true);
+            $table->string('TerçaComidaAlmoço', 255)->nullable(true);
+            $table->string('TerçaBebidaTarde', 255)->nullable(true);
+            $table->string('TerçaComidaTarde', 255)->nullable(true);
 
-            $table->string('QuartaBebidaManha', 255)->nullable(false);
-            $table->string('QuartaComidaManha', 255)->nullable(false);
-            $table->string('QuartaBebidaAlmoço', 255)->nullable(false);
-            $table->string('QuartaComidaAlmoço', 255)->nullable(false);
-            $table->string('QuartaBebidaTarde', 255)->nullable(false);
-            $table->string('QuartaComidaTarde', 255)->nullable(false);
+            $table->string('QuartaBebidaManha', 255)->nullable(true);
+            $table->string('QuartaComidaManha', 255)->nullable(true);
+            $table->string('QuartaBebidaAlmoço', 255)->nullable(true);
+            $table->string('QuartaComidaAlmoço', 255)->nullable(true);
+            $table->string('QuartaBebidaTarde', 255)->nullable(true);
+            $table->string('QuartaComidaTarde', 255)->nullable(true);
 
-            $table->string('QuintaBebidaManha', 255)->nullable(false);
-            $table->string('QuintaComidaManha', 255)->nullable(false);
-            $table->string('QuintaBebidaAlmoço', 255)->nullable(false);
-            $table->string('QuintaComidaAlmoço', 255)->nullable(false);
-            $table->string('QuintaBebidaTarde', 255)->nullable(false);
-            $table->string('QuintaComidaTarde', 255)->nullable(false);
+            $table->string('QuintaBebidaManha', 255)->nullable(true);
+            $table->string('QuintaComidaManha', 255)->nullable(true);
+            $table->string('QuintaBebidaAlmoço', 255)->nullable(true);
+            $table->string('QuintaComidaAlmoço', 255)->nullable(true);
+            $table->string('QuintaBebidaTarde', 255)->nullable(true);
+            $table->string('QuintaComidaTarde', 255)->nullable(true);
 
-            $table->string('SextaBebidaManha', 255)->nullable(false);
-            $table->string('SextaComidaManha', 255)->nullable(false);
-            $table->string('SextaBebidaAlmoço', 255)->nullable(false);
-            $table->string('SextaComidaAlmoço', 255)->nullable(false);
-            $table->string('SextaBebidaTarde', 255)->nullable(false);
-            $table->string('SextaComidaTarde', 255)->nullable(false);
+            $table->string('SextaBebidaManha', 255)->nullable(true);
+            $table->string('SextaComidaManha', 255)->nullable(true);
+            $table->string('SextaBebidaAlmoço', 255)->nullable(true);
+            $table->string('SextaComidaAlmoço', 255)->nullable(true);
+            $table->string('SextaBebidaTarde', 255)->nullable(true);
+            $table->string('SextaComidaTarde', 255)->nullable(true);
             $table->timestamps();
         });
     }

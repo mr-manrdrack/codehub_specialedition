@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CallClassProfessorController extends Controller
 {
@@ -11,7 +12,19 @@ class CallClassProfessorController extends Controller
      */
     public function index()
     {
-        return view('/professor/realizar_chamada');
+        $disciplinas = DB::table('disciplinas')->get();
+        $turmas = DB::table('turmas')->get();
+        $alunos = DB::table('usuarios')->where('cargo', 'aluno')->get();
+        return view('professor.realizar_chamada', [
+            'disc' => $disciplinas,
+            'turmas' => $turmas,
+            'alunos' => $alunos
+        ]);
+        return view('professor.realizar_chamada', [
+            'disc' => $disciplinas,
+            'turmas' => $turmas,
+            'alunos' => $alunos
+        ]);
     }
 
     /**

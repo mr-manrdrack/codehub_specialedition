@@ -9,9 +9,16 @@
         <li><a href="{{ $caminhoOpcao3 }}">{{ $opcao3 }}</a></li>
         <li><a href="{{ $caminhoOpcao4 }}">{{ $opcao4 }}</a></li>
         <li><a href="{{ $caminhoOpcao5 }}">{{ $opcao5 }}</a></li>
-        <div class="contato">
-            <img src="" alt="">
-            <li><a href="{{ $caminhoOpcao6 }}">Usuário</a></li>
-        </div>
+        @if (!empty($caminhoOpcao6))
+            <li><a href="{{ $caminhoOpcao6 }}">{{ $opcao6 }}</a></li>
+        @endif
+
+        @if (!empty($caminhoOpcao7))
+            <li><a href="{{ $caminhoOpcao7 }}">{{ $opcao7 }}</a></li>
+        @endif
+
+        @if (!empty($caminhoOpcao8))
+            <li><a href="{{ $caminhoOpcao8 }}">{{ $opcao8 }}</a></li>
+        @endif
     </ul>
 </div>

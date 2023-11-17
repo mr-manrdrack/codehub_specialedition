@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cod&Hub - Adicionar Disciplina</title>
+	<title>Cod&Hub - Adicionar Usuário</title>
 	<link rel="stylesheet" href="/css/global.css">
 	<link rel="stylesheet" href="/css/navbar.css">
 	<link rel="stylesheet" href="/css/add_item.css">
@@ -24,19 +24,8 @@
 			opcao8="" caminhoOpcao8=""
 		/>	
 	</nav>
-	<x-titulo titulo="Adicionar Disciplina" subtitulo="" />
-	<div class="container">
-        <form action="{{route('add_disciplina.store')}}" method='post'>
-            @csrf
-            <div class="label_input">
-                <label  for="materia">Disciplina</label>
-                <br>
-                <input type="text" name="nomesdisciplina" placeholder="Digite a Disciplina" >
-            </div>
-
-            <input class="botao" type="submit" value="SALVAR">
-        </form>
-    </div>
+	<x-titulo titulo="Adicionar Usuários" subtitulo="" />
+	<x-adicionar_item rota="{{route('add_usuarios.store')}}" input1="Nome" inputOpcao1="nome" input2="Função" inputOpcao2="cargo" input3="Matricula" inputOpcao3="Matricula" descricao="" inputDescricao="" inputHorario="" horario="" />
 	<x-footer />
 </body>
 </html>

@@ -9,11 +9,12 @@ form {
 
 .tabela {
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* Três colunas com largura igual */
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* Três colunas com largura igual */
 }
 
+
 .celula {
-  margin: 22px;
+  margin: 15px;
   text-align: center;
   font-weight: 600;
 }
@@ -65,5 +66,12 @@ input {
 
 .azul input {
   color: var(--cinza-medio);
+}
+
+.vsfd:hover {
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  color: var(--azul-escuro);
+  background-color: var(--cinza-medio);
 }
 
