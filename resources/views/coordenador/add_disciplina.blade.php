@@ -24,9 +24,9 @@
 			opcao8="" caminhoOpcao8=""
 		/>	
 	</nav>
-	<x-titulo titulo="Adicionar Matéria" subtitulo="" />
+	<x-titulo titulo="Adicionar Disciplina" subtitulo="" />
 	<div class="container">
-        <form action="" method="POST">
+        <form action="{{route('add_disciplina.store')}}" method='post'>
             @csrf
             <div class="label_input">
                 <label  for="materia">Disciplina</label>
