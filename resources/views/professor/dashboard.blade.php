@@ -69,7 +69,7 @@
                     </div>
                 </button>
             </a>
-            <a href="/professor/selecionar_turma_chamada">
+            <a href="/professor/realizar_chamada">
                 <button type="submit">
                     <svg xmlns="http://www.w3.org/2000/svg" width="69" height="76" viewBox="0 0 69 76" fill="none">
                         <path d="M20.5 3V13.5" stroke="#E4E4E4" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
