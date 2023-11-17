@@ -2,6 +2,24 @@ form {
     position: relative;
 }
 
+.label_input{
+    position: absolute;
+    top: 0;
+}
+
+.label_input input{
+    border: 2px solid var(--azul-escuro);
+    border-radius: 3px;
+    background-color: var(--cinza-medio);
+    margin-top: 22px;
+    width: 360px;
+    resize: none;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--azul-medio);
+}
+
 .tabela {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
