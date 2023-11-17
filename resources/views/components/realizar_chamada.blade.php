@@ -52,36 +52,5 @@
         </div>
         <input class="botao cancelar" type="reset" value="CANCELAR">
         <input class="botao" type="submit" value="SALVAR">
-    </form>
-
-    <form action="" method="post">
-        <div id="meu-popup" class="popup">
-            <span class="fechar" id="fechar-popup">X</span>
-            <h2>Justificativa de Falta</h2>
-            
-            <div class="conteudo_popup">
-                <div>
-                    <input type="radio" name="justificativa" value="PS">
-                    <label for="">PS - Problema de Saúde</label>
-                </div>
-                
-                <div>
-                    <input type="radio" name="justificativa" value="OSM">
-                    <label for="">OSM - Obrigações com o Serviço Militar</label>
-                </div>
-                
-                <div>
-                    <input type="radio" name="justificativa" value="FP">
-                    <label for="">FP - Falecimento de Parente até 2º Grau</label>
-                </div>
-                
-                <div>
-                    <input type="radio" name="justificativa" value="CPJ_CJE">
-                    <label for="">CPJ ou CJE - Convocação pelo Poder Judiciário <br> ou Justiça Eleitoral</label>
-                </div>
-            </div>
-            <input class="botao botao_popup" type="submit" value="SALVAR">
-        </div>
-        
-    </form>
+    </form>        
 </div>

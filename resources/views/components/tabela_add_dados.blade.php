@@ -50,11 +50,8 @@
 </div>
 <div id="select">
     <select name="professorLista">
-        <option value="nenhum">SELECIONE O PROFESSOR:</option>
-        <option value="Matheus">Matheus</option>
-        <option value="Julião">Julião</option>
-        <option value="Anderson">Anderson</option>
-        <option value="Jonas">Jonas</option>
-        <option value="Cinthia">Cinthia</option>
+        @foreach($professores as $professor)
+            <option value="{{$professor -> Matricula}}">{{$professor -> nome}}</option>
+        @endforeach
     </select>
 </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Cardapio;
+use Illuminate\Support\Facades\DB;
 
 class FoodSupervisorController extends Controller
 {
@@ -12,7 +13,9 @@ class FoodSupervisorController extends Controller
      */
     public function index()
     {
-        return view('coordenador.add_refeicao');
+        $professores = DB::table('usuarios')->where('cargo', 'professor')->get();
+
+        return view('coordenador.add_refeicao',['professores' => $professores]);
     }
 
     /**
