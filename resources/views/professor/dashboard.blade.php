@@ -123,26 +123,58 @@
             </a>
         </section>
         <section id="direita">
+        <div class="cards_aling">
+            <div class="cards">
             <a href="/professor/eventos">
-                <div class="carousel-container">
-                    <div class="carousel-slide">
-                        <img src="https://live.staticflickr.com/7333/14119970151_fd7421110f_b.jpg" alt="Imagem 1">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://files.sysers.com/cp/upload/jbird/editor/full/school-church-events.jpg" alt="Imagem 2">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://live.staticflickr.com/65535/49645605021_c0a5d1bcff_b.jpg" alt="Imagem 3">
-                    </div>
-                </div>
+                <img src="https://i.pinimg.com/736x/4d/09/2f/4d092f3b268785478059f87cded170d1.jpg">
             </a>
-
-            <div class="carousel-indicators">
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
             </div>
-
+            <div class="cards">
+            <a href="/professor/eventos">
+                <img src="https://s2-g1.glbimg.com/xV2i830jYXtPy1W9jQwnNWlduyI=/0x0:900x1200/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/F/g/4pgBWPS3KYyZzl07CR2g/foto-1-jm-g1-vertical-900x1200.jpg">
+            </a>
+            </div>
+            <div class="cards">
+            <a href="/professor/eventos">
+                <img src="https://img.freepik.com/fotos-gratis/tiro-vertical-de-uma-cachoeira-que-flui-de-um-penhasco-alto-coberto-de-arvores-verdes_181624-5569.jpg">
+            </a>
+            </div>
+            <div class="cards">
+            <a href="/professor/eventos">
+                <img src="https://images.freeimages.com/images/large-previews/604/vertical-sky-1481104.jpg?fmt=webp&w=350">
+            </a>
+            </div>
+            <div class="cards">
+            <a href="/professor/eventos">
+                <img src="https://cdn.pixabay.com/photo/2020/03/26/19/37/poppies-4971583_640.jpg">
+            </a>
+            </div>
+            <div class="cards">
+            <a href="/professor/eventos">
+                <img src="https://st3.depositphotos.com/27201292/37212/i/450/depositphotos_372126606-stock-photo-a-vertical-shot-of-two.jpg">
+            </a>
+            </div>
+            <div class="cards">
+            <a href="/professor/eventos">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/31/3b/1a/raul-verticalrio.jpg">
+            </a>
+            </div>
+            <div class="cards">
+            <a href="/professor/eventos">
+                <img src="https://images.unsplash.com/photo-1526512340740-9217d0159da9?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVydGljYWx8ZW58MHx8MHx8fDA%3D">
+            </a>
+            </div>
+            <div class="cards">
+            <a href="/professor/eventos">
+                <img src="https://img.freepik.com/fotos-gratis/foto-vertical-de-uma-passagem-de-madeira-sobre-um-pequeno-lago-reflexivo-e-uma-cadeia-de-montanhas-no-horizonte_181624-37099.jpg">
+            </a>
+            </div>
+            <div class="cards">
+            <a href="/professor/eventos">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfnYmeQQhivSWuPXpSo4-Pn9MFyIE4VmwWog&usqp=CAU">
+            </a>
+            </div>
+        </div>
         </section>
     </main>
     <x-footer />
