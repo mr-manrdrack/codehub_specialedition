@@ -31,6 +31,13 @@
         </div>
         @endif
 
+        @if(!empty($turma))
+        <div class="label_input">
+            <label for="">{{ $turma }}</label><br>
+            <input type="text" name="{{ $inputTurma }}">
+        </div>
+        @endif
+
         @if(!empty($descricao))
         <div class="label_input">
             <label for="">{{ $descricao }}</label><br>

@@ -14,7 +14,7 @@ class NewsletterSupervisorController extends Controller
     public function index()
     {
         $disciplinas = DB::table('disciplinas')->get();
-        $turmas = DB::table('turmas')->get();
+        $turmas = DB::table('usuarios')->select('turma')->get();
         $alunos = DB::table('usuarios')->where('cargo', 'aluno')->get();
     
         return view('/coordenador/add_boletim', [

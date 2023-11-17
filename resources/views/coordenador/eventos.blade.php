@@ -34,6 +34,8 @@
 		inputOpcao4=""
 		input5=""
 		inputOpcao5=""
+		turma=""
+		inputTurma=""
 		descricao="Descrição"
 		inputDescricao="descricao"
 		inputHorario="horario"

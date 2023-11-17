@@ -13,7 +13,7 @@ class CallClassProfessorController extends Controller
     public function index()
     {
         $disciplinas = DB::table('disciplinas')->get();
-        $turmas = DB::table('turmas')->get();
+        $turmas = DB::table('usuarios')->select('turma')->get();
         $alunos = DB::table('usuarios')->where('cargo', 'aluno')->get();
         return view('professor.realizar_chamada', [
             'disc' => $disciplinas,

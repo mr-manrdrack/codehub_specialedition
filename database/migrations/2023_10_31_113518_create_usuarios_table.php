@@ -16,6 +16,7 @@ return new class extends Migration
             $table->primary('Matricula');
             $table->string('usuario', 255)->nullable(true);
             $table->string('nome', 255)->nullable(true);
+            $table->string('turma',255)->nullable(false);
             $table->string('senha', 255)->nullable(true);
             $table->string('email', 255)->nullable(true);
             $table->string('cargo', 255)->nullable(true);

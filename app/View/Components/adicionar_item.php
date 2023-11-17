@@ -9,10 +9,12 @@ use Illuminate\View\Component;
 
 class adicionar_item extends Component
 {
-    public $inputOpcao1, $inputOpcao2, $inputOpcao3, $inputDescricao, $inputHorario;
-    public $input1, $input2, $input3, $descricao, $horario, $rota;
+    public $inputOpcao1, $inputOpcao2, $inputOpcao3, $inputDescricao, $inputHorario, $inputTurma;
+    public $input1, $input2, $input3, $descricao, $horario, $turmas, $rota;
 
-    public function __construct($inputOpcao1, $inputOpcao2, $inputOpcao3, $inputDescricao, $inputHorario, $input1, $input2, $input3, $descricao, $horario, $rota)
+    public function __construct($inputOpcao1, $inputOpcao2, $inputOpcao3, 
+    $inputDescricao, $inputHorario, $input1, 
+    $input2, $input3, $descricao, $horario, $rota, $turmas, $inputTurma)
     {
         $this->inputOpcao1 = $inputOpcao1;
         $this->inputOpcao2 = $inputOpcao2;
@@ -25,6 +27,8 @@ class adicionar_item extends Component
         $this->descricao = $descricao;
         $this->horario = $horario;
         $this->rota = $rota;
+        $this->turmas = $turmas;
+        $this->input = $inputTurma;
     }
 
     /**
