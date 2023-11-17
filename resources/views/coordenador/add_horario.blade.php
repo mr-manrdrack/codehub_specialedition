@@ -28,7 +28,7 @@
     <div class="container">
         <form action="{{ route('add_horario.store') }}" method="post">
             @csrf
-            <x-tabela_add_dados 
+            <x-tabela_add_dados :professores="$professores"
                 :horario="['7:30', '8:10', '9:30', '10:20', '11:10', '13:20', '14:10', '15:20', '16:10']"
                 descricao1="Turma"
                 descricao2="Disciplina"

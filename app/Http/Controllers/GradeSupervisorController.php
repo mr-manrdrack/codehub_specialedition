@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Horario;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class GradeSupervisorController extends Controller
 {
@@ -12,7 +13,9 @@ class GradeSupervisorController extends Controller
      */
     public function index()
     {
-        return view('coordenador.add_horario');
+        $professores = DB::table('usuarios')->where('cargo', 'professor')->get();
+        
+        return view('coordenador.add_horario', ['professores' => $professores]);
     }
 
     /**

@@ -33,7 +33,7 @@
     <div class="container">
         <form action="{{ route('add_refeicoes.store') }}" method="post">
             @csrf
-            <x-tabela_add_dados 
+            <x-tabela_add_dados :professores="$professores"
                 :horario="['9:10', '12:00', '15:00', '', '']"
                 descricao1="Refeição"
                 descricao2="Bebida"

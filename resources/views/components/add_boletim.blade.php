@@ -24,7 +24,6 @@
 
     @foreach ($alunos as $aluno)
         <div class="celula cinza nome_amarelo">{{ $aluno->nome }}</div>
-        <div class="celula cinza nome_amarelo">{{$aluno -> MatriculaAluno}}</div>
         <div class="celula cinza"><input type="text" placeholder="0,0" name="nota1" id="nota1"></div>
         <div class="celula azul"><input type="text" placeholder="0,0" name="nota2" id="nota2"></div>
         <div class="celula cinza"><input type="text" placeholder="0,0" name="nota3" id="nota3"></div>

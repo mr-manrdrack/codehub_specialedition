@@ -8,10 +8,12 @@ use Illuminate\View\Component;
 
 class tabela_add_dados extends Component
 {
+    public $professores;
     public $horario;
     public $descricao1, $descricao2;
-    public function __construct($horario, $descricao1, $descricao2)
+    public function __construct($professores,$horario, $descricao1, $descricao2)
     {
+        $this->professores = $professores;
         $this->horario = $horario; 
         $this->descricao1 = $descricao1; 
         $this->descricao2 = $descricao2; 

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('cardapios', function (Blueprint $table) {
             $table->id();
 
-            //$table->string('dia');
+            $table->date('dia');
             
             $table->string('SegundaBebidaManha', 255)->nullable(true);
             $table->string('SegundaComidaManha', 255)->nullable(true);
